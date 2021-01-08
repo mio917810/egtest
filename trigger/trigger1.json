@@ -1,0 +1,23 @@
+{
+	"name": "trigger1",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pipeline1",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/1c27eef2-8c85-429b-af16-2dc67930e797/resourceGroups/smmr_202101/providers/Microsoft.Storage/storageAccounts/smmregteststg",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
