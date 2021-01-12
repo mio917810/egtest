@@ -13,6 +13,7 @@
 		],
 		"type": "BlobEventsTrigger",
 		"typeProperties": {
+			"blobPathBeginsWith": "/test/blobs/",
 			"ignoreEmptyBlobs": true,
 			"scope": "/subscriptions/1c27eef2-8c85-429b-af16-2dc67930e797/resourceGroups/smmr_202101/providers/Microsoft.Storage/storageAccounts/smmregstg",
 			"events": [
